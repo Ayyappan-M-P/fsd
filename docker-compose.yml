@@ -6,12 +6,9 @@ services:
       context: ./be
       dockerfile: Dockerfile
     ports:
-      - "5002:5002"
+      - "5003:5002"
     environment:
-      - DB_HOST=boovkd434xr0zfz4t0mu-mysql.services.clever-cloud.com
-      - DB_USER=ufiog8sb8qoqwfor
-      - DB_PASSWORD=cVuFz7kXWKbG1LTkf7EK
-      - DB_NAME=boovkd434xr0zfz4t0mu
+      - DATABASE_URL=mysql://root:OLHCqThmdmwZkrGfKyxHGXZlADWhJPSQ@autorack.proxy.rlwy.net:10971/railway
     networks:
       - employee-app-network
 
@@ -26,6 +23,6 @@ services:
     networks:
       - employee-app-network
 
-
 networks:
   employee-app-network:
+    driver: bridge
