@@ -1,1 +1,1 @@
-export const backendURL = "http://localhost:5002"
+export const backendURL = "https://fsd-8ehb.onrender.com"
