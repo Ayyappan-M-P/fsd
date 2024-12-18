@@ -1,12 +1,6 @@
 const mysql = require("mysql2");
 
-const db = mysql.createConnection({
-    host: "localhost",       // For local MySQL
-    port: 3306,              // MySQL default port
-    user: "root",            // Local MySQL user
-    password: "123456",      // Your local MySQL password
-    database: "employeemanagement" // Your local database name
-});
+const db = mysql.createConnection('mysql://root:OLHCqThmdmwZkrGfKyxHGXZlADWhJPSQ@autorack.proxy.rlwy.net:10971/railway');
 
 
 db.connect((err) => {
